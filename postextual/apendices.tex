@@ -1,0 +1,132 @@
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+
+% ---
+% Inicia os apêndices
+% ---
+\begin{apendicesenv}
+
+% Imprime uma página indicando o início dos apêndices
+\partapendices
+
+% ----------------------------------------------------------
+\chapter{Atributos dos Microdados Disponibilizados pela CPI da Previdência}\label{apendice:a}
+% ----------------------------------------------------------
+
+
+\begin{table}[!h]
+\renewcommand{\arraystretch}{1.3}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|c|c|cl}
+\hline
+\textbf{Campo} & \multicolumn{1}{l|}{\textbf{Descrição Campo}} & \multicolumn{1}{c|}{\textbf{Código}} & \multicolumn{1}{l|}{\textbf{Descrição Código}} \\ \hline
+\multirow{8}{*}{ESPECIE} & \multirow{8}{*}{Espécie do Benefício} & \multicolumn{1}{c|}{31} & \multicolumn{1}{l|}{Auxilio doença previdenciário} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{32} & \multicolumn{1}{l|}{Aposentadoria por invalidez previdenciária} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{41} & \multicolumn{1}{l|}{Aposentadoria por idade} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{42} & \multicolumn{1}{l|}{Aposentadoria por tempo de serviço previdenciária} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{46} & \multicolumn{1}{l|}{Aposentadoria por tempo de serviço especial} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{57} & \multicolumn{1}{l|}{Aposentadoria por tempo de serviço de professor} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{91} & \multicolumn{1}{l|}{Auxílio doença acidentário} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{92} & \multicolumn{1}{l|}{Aposentadoria por invalidez por acidente do trabalho} \\ \hline
+DIB & Data de Início do Benefício &  &  \\ \cline{1-2}
+DDB & Data de Despacho do Benefício &  &  \\ \cline{1-2}
+MOT\_CESSACAO & Motivo de Cessação * &  &  \\ \cline{1-2}
+ULT\_COMPET\_MR & \begin{tabular}[c]{@{}c@{}}Competência da Cálculo da Última\\ Mensalidade Reajustada\end{tabular} &  &  \\ \cline{1-2}
+VL\_MR & \begin{tabular}[c]{@{}c@{}}Valor da Última Mensalidade\\ Reajustada\end{tabular} &  &  \\ \cline{1-2}
+DT\_NASC & Data de Nascimento do Titular &  &  \\ \cline{1-2}
+VL\_RMI & Valor da Renda Mensal Inicial &  &  \\ \hline
+\multirow{3}{*}{CLIENTELA} & \multirow{3}{*}{Clientela} & \multicolumn{1}{c|}{1} &
+\multicolumn{1}{l|}{Masculino} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{3} & \multicolumn{1}{l|}{Feminino} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{9} & \multicolumn{1}{l|}{Ignorado} \\ \hline
+\multirow{16}{*}{SITUACAO} & \multirow{16}{*}{Situação do Benefício} & \multicolumn{1}{c|}{0} & \multicolumn{1}{l|}{Ativo} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{2} & \multicolumn{1}{l|}{Cessado} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{3} & \multicolumn{1}{l|}{Suspenso} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{4} & \multicolumn{1}{l|}{Suspenso por Marca de Erro} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{5} & \multicolumn{1}{l|}{Cessado por Cess do Titular Proprio (Pa)} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{7} & \multicolumn{1}{l|}{Bloqueado Pelo Controle de Pagamento} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{8} & \multicolumn{1}{l|}{Cessado Pelo Sistema de Obitos da Dtp} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{10} & \multicolumn{1}{l|}{Recebendo Mensalid de Recuper 6 Meses} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{11} & \multicolumn{1}{l|}{Recebendo Mensalid de Recuper 18 Meses} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{12} & \multicolumn{1}{l|}{Suspenso Pelo Sistema de Revisao Rur/Urb} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{16} & \multicolumn{1}{l|}{Beneficio Suspenso Pela  Auditoria} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{17} & \multicolumn{1}{l|}{Beneficio Cessado Pela Inspetoria} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{18} & \multicolumn{1}{l|}{Beneficio Cessado Pela Auditoria} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{22} & \multicolumn{1}{l|}{Cessado Pela Revisao Rural/95} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{23} & \multicolumn{1}{l|}{Susp. Pelo Sistema de Obitos da Dataprev} \\ \cline{3-4} 
+ &  & \multicolumn{1}{c|}{24} & \multicolumn{1}{l|}{Cancelado Pela Auditoria} \\ \hline
+DT\_OBITO & Data de Óbito &  &  \\ \cline{1-2}
+TEMPO\_CONTRIB & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Tempo de Contribuição, em Anos,\\ do Titular\end{tabular}} &  &  \\ \cline{1-2}
+IDADE\_DIB & \multicolumn{1}{c|}{Idade na DIB do Titular} &  &  \\ \cline{1-2}
+\end{tabular}}
+\end{table}
+
+* Códigos com os motivos de cessação listados a seguir.
+
+\newpage
+
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.5}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Código} & \textbf{Descrição} & \textbf{Código} & \textbf{Descrição} \\ \hline
+2 & NAO COMPROVACAO DE FE DE VIDA & 51 & CESSACAO POR REVISAO RURAL/95 \\ \hline
+3 & CESSACAO POR SUSPEITA DE OBITO/SIM & 52 & ERRO ADM. INFORMADO PELA AUDITORIA \\ \hline
+4 & REVBPC NAO LOCALIZ. DO BENEFICIARIO & 53 & FRAUDE INFORMADA PELA AUDITORIA \\ \hline
+5 & NAO APRES. DE DOCS. OBRIGATORIA & 54 & LIMITE MEDICO INFORMADO P/ PERICIA \\ \hline
+6 & NAO ATENDIMENTO A CONVOC.POSTO & 55 & IRREGULARID./ERRO MEDICO-PERICIAL \\ \hline
+7 & BPC\textgreater{}2 ANOS - APRENDIZ C/ DEFIC. & 56 & RECUP.LESAO C/ DESCARAC. DO BENEF. \\ \hline
+8 & BENEFICIO CONCEDIDO COM CESSACAO DA DIB & 57 & CESS. DE AUXILIO RECLUSAO POR FUGA \\ \hline
+9 & DCA ACP2005.33.00.020219-8 & 58 & BENEFICIO C/DCI C/ MAIS DE 60 DIAS \\ \hline
+10 & CESSACAO POR SUSPEITA DE OBITO & 59 & CESSADO, DIVERGENCIA DADOS CNIS \\ \hline
+11 & CESSACAO POR NAO COMPARECIMENTO AO CENSO & 60 & CESS.DE BENEFICIO FORA DE CADASTRO \\ \hline
+12 & LIMITE MEDICO & 61 & RECUSA AO PROGR. REABILIT. PROFIS. \\ \hline
+13 & OBITO DO TITULAR DO BENEFICIO & 62 & REVBPC N+DEF LON PZ/R\textgreater{}1/4S \\ \hline
+14 & CESSACAO P/ACAO REVISIONAL COMPARTILHADA & 63 & CESSACAO P/ FALTA DE DIGITALIZACAO \\ \hline
+15 & OPCAO CONCESSAO BENEFICIO PREVIDENCIARIO & 64 & OBITO SEGURADO INSTIT.AUX.RECLUSAO \\ \hline
+16 & CASAMENTO & 65 & BENEF. SUSPENSO POR MAIS DE 6 MESES \\ \hline
+17 & REAPARECIMENTO DO INSTITUIDOR & 66 & VOLTA TRABALHO-ATIV.INSALUBRE(B46) \\ \hline
+18 & DESISTENCIA BPC-LOAS PELO TITULAR & 67 & CESSACAO POR CONCESSAO DE B80 \\ \hline
+19 & CESS. PA DEVIDO CESS. BENEF. INST. & 68 & REMUNERACAO APOS A DIB \\ \hline
+20 & DESISTENCIA ESCRITA TITULAR DO BENEFICIO & 69 & ALTA MEDICA \\ \hline
+21 & TRANSFORMACAO B87 EM B88 & 70 & RETORNO VOLUNTARIO AO TRABALHO \\ \hline
+22 & PRORROGACAO DE BENEFICIO ANTERIOR & 71 & ERRO TECNICO \\ \hline
+23 & CONCES. APOSENT. P/RECLUSO & 72 & NAO COMPARECIMENTO \\ \hline
+24 & SUSPENSAO 64 P/MAIS 6MESES & 73 & RET./PERMANENC.NA ATIV.COND.ESPEC. \\ \hline
+25 & NB TRANSITADO JULG/REV.ADM & 74 & CANCELAMENTO POR FRAUDE/AUDITORIA \\ \hline
+26 & RENDA PER CAPITA - REVBPC & 75 & CANCELAMENTO P/IRREGULARIDADE/AUDITORIA \\ \hline
+27 & PM DENEGATORIA - REVBPC & 76 & CANCELAMENTO P/ERRO ADM.MEDICO/AUDITORIA \\ \hline
+28 & TRANSFORMACAO PARA OUTRA ESPECIE & 77 & IRREGULARIDADE DETECTADA PELA AUDITORIA \\ \hline
+29 & CONCESSAO DE OUTRO BENEFICIO & 78 & CESS. DE B80 C/CONTRATO TEMPORARIO \\ \hline
+30 & CONSTATACAO DE FRAUDE & 79 & CESSACAO DE B80 (120/134 DIAS) \\ \hline
+31 & CONSTATACAO IRREGULAR./ERRO ADM. & 80 & ABORTO NAO CRIMINOSO \\ \hline
+32 & DECISAO DE CESSACAO POR RECURSO & 81 & OBITO INFORMADO PELA REVBPC \\ \hline
+33 & DECISAO JUDICIAL & 82 & CESSACAO DE B80 (60 DIAS) \\ \hline
+34 & VOLTA AO TRABALHO & 83 & CESSACAO DE B80 (30 DIAS) \\ \hline
+35 & BENEFICIO SEM DEPENDENTE VALIDO & 84 & CESSACAO - OPCAO RECEB. PELO M.  EXERCITO \\ \hline
+36 & ACUMULACAO INDEVIDA DE BENEFICIOS & 85 & BENEFICIO COM NIT ERRADO \\ \hline
+37 & SUSP SISOBI MAIS 6 MESES & 86 & CESSACAO B94/95 PARECER MEDICO  CONTRARIO \\ \hline
+38 & CESSACAO ABONO P/ CONCES. APOSENT. & 87 & CESSACAO ACUMULACAO INDEVIDA REV. 2003 \\ \hline
+39 & NAO ATENDIMENTO CONVOCACAO INSPET. & 88 & REVBPC N HA+DEF LONG PZ \\ \hline
+40 & CESS.P/ RECUP.TOTAL DENTRO 5 ANOS & 89 & CESSACAO AMPARO LEI 10559/02. \\ \hline
+41 & CESS.P/ RECUP. PARCIAL APOS 5 ANOS & 90 & CESSACAO DE PA DEVIDO DATA LIMITE \\ \hline
+42 & CESSADO P/ SIST. DE OBITOS(SISOBI) & 91 & REVISAO DE ACORDAO \\ \hline
+43 & AUX.RECL.-CUMPR.PENA,CONDIC.,ALBERG. & 92 & LIMITE INDEFINIDO S/CONCESSAO DE B32/92 \\ \hline
+44 & AUX.DOENCA NAO COMPAREC. A PERICIA & 93 & CESSACAO BATIMENTO FUNASA \\ \hline
+45 & CESS. BENEFICIO - RECIPROCA & 94 & ALTA VOLUNTARIA \\ \hline
+46 & ESTATUTARIO TRANSF. P/ORGAO ORIGEM & 95 & NAO COMPARECIMENTO A REABILITACAO PROF. \\ \hline
+47 & CESS. DEVIDO PERDA QUALID. DEPEND. & 96 & TRANSFERENCIA P/ORGAO ORIGEM LEI 8878/94 \\ \hline
+48 & BENEF. CESSADO NO SISTEMA ANTIGO & 97 & COMPROVADA MA FE DO BENEFICIARIO \\ \hline
+49 & OBITO INFORMADO PELA AUDITORIA & 98 & CESSACAO POR LEI \\ \hline
+50 & CONCESSAO DE AUXILIO FUNERAL (PAB) & 99 & OBITO DEPENDENTE INFORM.  P/CENSO(HIPNET) \\ \hline
+\end{tabular}}
+\end{table}
+% ----------------------------------------------------------
+%\chapter{Perceba que o texto do título desse segundo apêndice é bem grande}
+% ----------------------------------------------------------
+%\lipsum[51-53] % Texto qualquer. REMOVER!!
+
+\end{apendicesenv}
+% ---
