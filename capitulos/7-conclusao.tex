@@ -1,0 +1,50 @@
+\chapter{Considerações Finais}\label{cap:conclusao}
+
+A população brasileira está diante de uma possível reforma previdenciária que causará impactos diretos na vida de todos os trabalhadores. Logo, é de extrema importância que a sociedade compreenda as razões que motivaram o governo propor tal medida e os efeitos que tais alterações tendem a causar no cenário social. Paralelamente, é possível observar que o advento da ciência de dados aliada à disseminação de dados abertos governamentais, apresentam-se como importantes ferramentas para a realização de análises cada vez mais complexas e precisas acerca da problemática descrita.
+
+Embora tal abordagem apresente-se em evidência na literatura, destaca-se a ausência de trabalhos que analisem os impactos socioeconômicos relacionados a temática abordada. Isto é, investigando o estado da arte, observou-se uma gama de pesquisas que avaliaram as participações de aposentadorias e pensões na distribuição de renda em um caráter nacional - impossibilitando interpretações em unidades territoriais menores -, e estudos que investigaram os impactos macroeconômicos que a reforma da previdência poderia causar.
+
+Diante disso, esta dissertação visou apresentar dois estudos de caso objetivando, de forma geral, compreender o impacto socioeconômico que o atual cenário previdenciário nacional causa na população, e simular os efeitos que a reforma prevista pela PEC 06/2019 pode provocar na concessão de benefícios. Com isso, a primeira pesquisa utilizou a metodologia de decomposição do índice de Gini e os microdados disponibilizados pelos censos demográficos de 2000 e 2010 para aferir o impacto que as aposentadorias e pensões causam na distribuição de renda dos estados e municípios brasileiros.
+
+Avaliando os resultados, nota-se que houve um aumento da participação dessa parcela de benefícios na composição de rendimentos da população, e uma diminuição no coeficiente de desigualdade econômica. Todavia, embora as aposentadorias e pensões apresentassem caráter regressivo na distribuição de riquezas, observou-se que os benefícios até um salário mínimo colaboravam para a diminuição da concentração de renda. Tal fator destacou-se nos municípios da região nordeste, que, sobretudo, apresentou os menores índices de médias salariais do Brasil. Além disso, destacam-se as interdependências existentes entre as variáveis analisadas, evidenciando a correlação negativa entre a participação dos benefícios avaliados com o índice de Gini, indicando que ao passo que um aumenta o outro diminui.
+
+Por outro lado, o segundo estudo utilizou os microdados de aposentadorias disponibilizados pela CPI da Previdência Social para simular os efeitos que as novas diretrizes, previstas na PEC 06/2019, causariam nos benefícios de 1995 a 2016 se as mesmas já estivessem em vigor na data em que cada aposentadoria foi concedida. Para isso, foram aplicadas estratégias de ciência de dados para facilitar o armazenamento dos dados, consultas e realização de futuras análises. 
+
+Dessa forma, após validar as informações disponibilizadas, observou-se que 83,28\% das aposentadorias concedidas no período analisado não atendiam às novas regras previstas na reforma. Evidenciou-se, então, que a PEC 06/2019, aliada aos elevados índices de informalidade existentes no Brasil, dificultaria o acesso a tais benefícios, dado a dificuldade que trabalhadores da RGPS tem em manterem-se estáveis em seus empregos. Além disso, estimou-se que aproximadamente 6,48\% dos beneficiários teriam falecido antes de dar entrada nas suas aposentadorias, e que somente 3\% do total receberiam a média integral, ou mais, das suas contribuições como mensalidade.
+
+Embora não tenham sido aplicadas técnicas de inteligência computacional nas análises realizadas, destaca-se a eficiência de utilizar ciência de dados em bases de dados abertas governamentais, uma vez que tal estratégia possibilitou a extração de conhecimento válido acerca de dados sem representatividade, podendo, dessa forma, servir como ferramenta para auxiliar possíveis tomadas de decisão em gestão pública. 
+
+Com objetivo de promover um trabalho colaborativo, foram disponibilizados todos os \textit{scripts}, ferramentas e dados utilizados nessa dissertação na plataforma GitHub, possibilitando esforços da comunidade cientifica para o enriquecimento nas análises realizadas. Com isso, devido ao fato de compreender um campo interdisciplinar, a Previdência Social possibilita que pesquisadores de diversas áreas desenvolvam alternativas para o debate com diferentes óticas, possibilitando, dessa forma, a elaboração políticas públicas cada vez mais justas e eficientes diante do cenário brasileiro.
+
+\section{Dificuldades Encontradas}
+
+Durante o desenvolvimento do trabalho foram encontradas uma série de dificuldades relacionadas, principalmente, a dificuldade de acesso a informações e granularidade dos dados disponibilizados.
+
+Dentre as principais dificuldades encontradas durante a realização deste trabalho, destacam-se:
+
+\begin{itemize}
+    \item Ausência de microdados atualizados dos rendimentos de aposentadorias e pensões acerca dos municípios brasileiros, impossibilitando a realização de investigações mais precisas da atual participação que esses benefícios tem na distribuição de renda.
+    
+    \item Ausência das identificações de estados e municípios nos microdados da CPI da Previdência, impossibilitando análises territoriais mais precisas dos impactos que a PEC 06/2019 pode causar.
+    
+    \item Ausência das datas de cessação dos benefícios contidos na base da CPI da Previdência, impossibilitando uma avaliação histórica de benefícios ativos.
+    
+    \item A granularidade das informações disponibilizadas pelo AEPS, divulgando informações agregadas que impossibilitam análises mais detalhadas e complexas.
+\end{itemize}
+
+
+\section{Trabalhos Futuros}
+ 
+Esta pesquisa encontra-se em desenvolvimento, possibilitando a realização de novas análises e discussões acerca da temática abordada. Dessa forma, os seguintes itens estão em processo de aperfeiçoamento e serão publicados em trabalhos futuros:
+
+\begin{itemize}
+    \item A exploração complementar da metodologia de decomposição do índice de Gini, efeitos composição e concentração, em outras subcategorias de salários (2, 3 e 4 salários mínimos, por exemplo), para avaliar de forma mais precisão a participação que as aposentadorias e pensões possuem na distribuição de riquezas da população.
+    
+    \item A aplicação de métodos estatísticos espaciais, como a varredura espacial de Kulldorff, afim de detectar regiões de \textit{clusters} acerca da das variáveis analisadas.
+    
+    \item A aplicação de técnicas de inteligência computacional, como Redes Bayesianas, para identificar as principais variáveis que influenciam na distribuição de renda da população.
+    
+    \item Utilizar as taxas de informalidade e desemprego para aferir, de forma mais precisa, o comportamento que as concessões de aposentadorias e pensões teriam se as regras previstas pela PEC 06/2019 já estivessem em vigor.
+    
+    \item Avaliar os impactos que a reforma da previdência causaria na distribuição de renda da população brasileira utilizando o índice de Gini e outras fontes de dados, como por exemplo a PNAD. 
+\end{itemize}

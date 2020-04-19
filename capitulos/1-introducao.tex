@@ -1,0 +1,58 @@
+% ----------------------------------------------------------
+% Introdução 
+% Capítulo sem numeração, mas presente no Sumário
+% ----------------------------------------------------------
+
+\chapter{Introdução}
+
+A Previdência Social é um programa de seguro público responsável por manter a fonte de renda dos trabalhadores e suas famílias quando estes perdem suas capacidades laborais provisoriamente, por acidentes, doenças ou maternidade, ou permanentemente, devido a morte, invalidez ou velhice. Esse programa é encarregado pelo ressarcimento de diversos benefícios sociais do trabalhador brasileiro, tais como aposentadorias, auxílios-doença, auxílios-acidente, pensão por morte, dentre outros \cite{cap04_ref6}. No cenário brasileiro, os trabalhadores formais, correspondentes aqueles que possuem carteira assinada, financiam mensalmente o fluxo de caixa dos repasses previdenciários, sendo comumente conhecido como regime de repartição simples ou \textit{pay as you go} (PAYG). O Regime Geral da Previdência Social (RGPS), responsável por atender os trabalhadores da iniciativa privada e aos servidores públicos que não contam com regimes próprios de previdência, estrutura-se nesse modelo de repartição \cite{cap05_ref11}.
+
+Os segurados da Previdência Social necessitam, como pré-requisito mínimo, contribuir regularmente para o Instituto Nacional do Seguro Social (INSS). Esse corresponde a uma autarquia do Governo Federal vinculado ao Ministério da Economia, possuindo como principal responsabilidade organizar as arrecadações e pagamentos dos benefícios previdenciários previstos por lei \cite{cap01_ref1}. O INSS trabalha em parceria com Empresa de Tecnologia e Informações da Previdência, o DATAPREV, encarregada por realizar o armazenamento e processamento dos dados gerados pelo instituto \cite{cap01_ref2}.
+
+Avaliando a Previdência Social em uma ótica mundial, observa-se em diversos países a realização de modificações em seus sistemas previdenciários tradicionais. Tais medidas, na maior parte das vezes, envolvem um acréscimo no tempo mínimo de contribuição e idade mínima como requisitos para acesso aos benefícios. Essas reformas, comumente, justificaram-se em uma relação de proporcionalidade entre as variáveis demográficas e financeiras, ou seja, o aumento da expectativa de vida e estagnação na densidade de população economicamente ativa proporcionaria gastos com beneficiários maiores do que arrecadações. Dessa forma, esse novo perfil etário causaria um desequilíbrio nas contas do sistema previdenciário \cite{cap01_ref3, cap03_ref5}. 
+
+Nesse contexto, a Organização das Nações Unidas (ONU) projeta que até 2100 a população idosa do mundo, correspondente a pessoas acima de 60 anos, tende a triplicar, estimando que essa categoria da população ultrapasse 3 bilhões de habitantes \cite{cap05_ref4}. A nível nacional, de acordo com o Instituto Brasileiro de Geografia e Estatística (IBGE), os índices de longevidade apresentam-se progressivos para os próximos anos convergindo para um crescente envelhecimento populacional \cite{cap05_ref5}.
+
+\section{Motivação e Justificativa}
+
+Atualmente, um dos assuntos mais discutidos no cenário político brasileiro refere-se a uma reforma na Previdência Social a qual ganhou destaque novamente no final do ano de 2016. Devido à natureza macroeconômica desse tema, diversos debates foram acarretados acerca da sua dimensão econômica-fiscal, por compreender uma significativa parcela dos orçamentos públicos, e do seu caráter político-social, por refletir diretamente em mudanças nas regras previdenciárias sobre um conjunto grande da população, incluindo contribuintes/segurados e beneficiários. 
+
+Dessa forma, o governo federal, motivado pela desaceleração do crescimento econômico e elevação da dívida pública \cite{cap05_ref6}, justificou a necessidade dessa reforma argumentando que, devido as elevadas taxas de longevidade registradas, o atual sistema tende a se tornar insustentável no decorrer dos próximos anos, e que Previdência Social pressiona a carga tributária nacional diminuindo o espaço para outros setores na composição do gasto público \cite{cap05_ref7}. Com isso, foi apresentada a população brasileira a Proposta de Ementa Constitucional n. 287 de dezembro de 2016 (PEC 287/16) – posteriormente substituída pela PEC 06/2019 devido ao seu insucesso – propondo alterações nas regras previdenciárias em idade mínima e tempo de contribuição para acesso aos benefícios. Destaca-se que entre os itens da reforma as principais modificações ocorrem no RGPS.
+
+Embora diversos cálculos atuarias estejam sendo realizados a fim de estimar, a curto e longo prazo, a solvência do sistema previdenciário atual \cite{cap01_ref1, cap01_ref4}, é necessário ponderar acima de tudo o impacto social que tais alterações acarretariam. Mediante a isso, o Ministério da Fazenda, através da Comissão Parlamentar de Inquérito (CPI) da Previdência, divulgou em junho de 2017 bases de dados relacionados aos números de benefícios de aposentadorias concebidos pelo RGPS, com o intuito de possibilitar a investigação dos resultados divulgados pelo programa.
+
+Paralelamente, o advento da ciência de dados tem ganhado destaque no cenário interdisciplinar com a crescente densidade de informações geradas pelos diversos segmentos da sociedade \cite{cap01_ref5}. Tal fator possibilita, sobretudo, o desenvolvimento de um novo campo de estudo para análises, simulações de cenários e extração de conhecimento válido acerca de bases de dados públicas. Nesse contexto, a utilização dos microdados previdenciários aliados a outras fontes de informação - demográficas e sociais - motivou o desenvolvimento dessa pesquisa, visto que possibilita a realização de avaliações críticas acerca do efeito que as aposentadorias causam na população brasileira e das consequências sociais que uma possível reforma nas regras para acesso aos benefícios causaria.
+
+\section{Objetivos Geral e Específicos}
+
+Diante disso, esta pesquisa objetiva, de forma geral, explorar a aplicação de técnicas e estratégias de Ciência de Dados em Dados Abertos Governamentais da Previdência Social. Para tanto, foram realizados dois estudos de caso visando: estimar a participação que o sistema previdenciário possui no cenário socioeconômico nacional; e simular os impactos que a reforma prevista na PEC 06/2019 causaria nas concessões de aposentadorias. 
+
+Especificamente, essa pesquisa tem como objetivos:
+
+\begin{itemize}
+    \item Utilizar os microdados dos censos demográficos de 2000 e 2010, disponibilizados pelo IBGE, e metodologia de decomposição do coeficiente de Gini, para aferir matematicamente a participação das aposentadorias e pensões na distribuição de renda da população brasileira a nível estadual e municipal.
+    
+    \item Modelar uma estrutura de \textit{Data Warehouse} para armazenar os microdados oficiais disponibilizados pela CPI da Previdência de 2017, objetivando - a partir da utilização de técnicas de processamento em lotes - simular os efeitos que a PEC 06/2019 causaria no cenário previdenciário entre 1995 a 2016, se a mesma já estivesse em vigor no momento em que cada benefício foi concedido.
+    
+    \item Aplicar estratégias e conceitos de ciência de dados para o tratamento, organização e processamento dos microdados utilizados, visando possibilitar a extração de conhecimento válido com simulações ou aplicação de medidas estatísticas acerca dos resultados gerados em cada análise proposta.
+\end{itemize}
+
+\section{Organização da Dissertação}
+
+Este trabalho está organizado da seguinte forma:
+
+\begin{itemize}
+    \item Capítulo 1: apresenta uma breve introdução do assunto abordado, a motivação para realização dessa pesquisa e os objetivos, geral e específicos, propostos por essa dissertação.
+    
+    \item Capítulo 2: apresenta a fundamentação teórica que norteou essa pesquisa, destacando os conceitos de análise de dados, ciência de dados e dados abertos, além de elencar os principais modelos matemáticas utilizados nas análises propostas.
+    
+    \item Capítulo 3: elenca os principais trabalhos correlatos a essa pesquisa, apontando as contribuições desta dissertação perante ao estado da arte da problemática abordada.
+    
+    \item Capítulo 4: apresenta o primeiro estudo de caso desta dissertação, responsável por avaliar a participação que as aposentadorias e pensões possuem na distribuição de renda da população brasileira.
+    
+    \item Capítulo 5: apresenta o segundo estudo de caso desta dissertação, responsável por simular os impactos que a reforma previdenciária prevista pela PEC 06/2019, avaliando o período de 1995 a 2016, causaria acerca das concessões de benefícios na hipótese da mesma já está em vigor quando cada aposentadoria foi concedida.
+    
+    \item Capítulo 6: apresenta as considerações finais desta pesquisa e as perspectivas de trabalhos futuros acerca dos estudos realizados.
+\end{itemize}
+
+
