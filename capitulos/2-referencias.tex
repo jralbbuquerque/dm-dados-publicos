@@ -20,15 +20,13 @@ Embora diversos autores interpretem os processos KDD e MD como sinônimos \cite{
 \begin{figure}[htpb]
    \centering
    \caption{Processo de descoberta de conhecimento em bases de dados.}
-   \includegraphics[width=\textwidth]{figs/cap02_KDD_model.pdf}
-   \caption*{\footnotesize{Fonte: Adaptado de \cite{cap02_ref12}}}
+   \includegraphics[width=0.7\textwidth]{figs/cap02_KDD_model.png}
+   \caption*{\footnotesize{Fonte: \cite{cap02_ref11}}}
    \label{fig:kdd_process}
 \end{figure}
 
-A primeira fase do KDD é compreendida pela seleção, sendo um dos estágios mais importantes no processo, esta é responsável por realizar uma triagem acerca de subconjuntos de dados que apresentem relevância perante ao domínio da aplicação abordada. A segunda etapa é de fundamental importância para a realização de uma extração de conhecimentos válidos e potencialmente uteis sendo denominada de pré-processamento. Esta demanda aproximadamente 80\% do tempo total do processo \cite{cap02_ref13}, e é responsável pela limpeza e correção de dados que estejam ausentes, errôneos ou inconsistentes. Na fase de transformação os dados são convertidos de acordo com a etapa posterior (mineração de dados) objetivando facilitar a identificação de padrões. Muitos autores, como \cite{cap02_ref11, cap02_ref6}, interpretam a segunda e terceira etapa como sendo parte do mesmo estágio, entretanto, em bases de dados muito robustas faz-se necessário sua separação objetivando uma realização mais eficiente de extração de informações e conhecimentos \cite{cap02_ref12}.
-
-Posteriormente, no estágio de Mineração de Dados, ocorre a aplicação de algoritmos específicos para o reconhecimento de padrões ou tendências acerca do conjunto de dados avaliado. \cite{cap02_ref5} destaca 4 tipos de técnicas de inteligência computacional para a realização dessas propostas: 
-
+A primeira fase do KDD é compreendida pelo conhecimento do domínio, ou identificação do problema, responsável por, a partir de avalição do domínio da aplicação a qual os dados pertencem, compreender e avaliar o processo como um todo e definir as metas e objetivos a serem alcançados. A segunda etapa é de fundamental importância para a realização de uma extração de conhecimentos válidos e potencialmente uteis sendo denominada de pré-processamento. Esta demanda aproximadamente 80\% do tempo total do processo \cite{cap02_ref13}, e é responsável pela limpeza, correção de dados que ausentes, errôneos ou inconsistentes e possíveis transformações, objetivando facilitar posteriores identificações de padrões.
+Posteriormente, no estágio de extração de padrões, ocorre a aplicação de algoritmos de Mineração de Dados específicos para o reconhecimento de padrões ou tendências acerca do conjunto de dados avaliado. \cite{cap02_ref5} destaca 4 tipos de técnicas de inteligência computacional para a realização dessas propostas: 
 \begin{itemize}
     \item Classificação: prediz a qual categoria ou classe um determinado item do conjunto de dados pertence;
     \item Agrupamento: também conhecido como \textit{clustering}, identifica grupos de itens com propriedades e características semelhantes sem pressupor classes especificas;
@@ -37,8 +35,8 @@ Posteriormente, no estágio de Mineração de Dados, ocorre a aplicação de alg
 \end{itemize}
 
 Perante aos diversos algoritmos de mineração de dados existente, a seleção da estratégia especifica a ser utilizada não é uma tarefa trivial. Algumas das técnicas descritas acima consiste na aplicação de um determinado algoritmo enquanto outras propõe a utilização de diversos métodos objetivando uma maior confiabilidade no resultado final. Portanto, para a seleção do algoritmo apropriado, deve-se levar em consideração o objetivo final da análise ponderando possíveis hipóteses \cite{cap02_ref14}.
+Em seguida, é realizada a etapa de pós-processamento acerca dos resultados encontrados. O sucesso dessa etapa determina a eficácia de todo o processo de KDD, avaliando e validando as informações geradas afim de identificar possíveis falhas nas fases anteriores \cite{cap02_ref12}. Observando a Figura~\ref{fig:kdd_process}, é possível observar que o fluxo do KDD é um processo recursivo, ou seja, caso o resultado encontrado seja incoerente ou não aceitável é possível reiniciar o mesmo, analisando todas as etapas em busca de melhorar e/ou refazer o que for necessário, até que o conhecimento resultante seja julgado como satisfatório.
 
-Em seguida, é realizada a abstração do conhecimento extraído acerca dos resultados encontrados. O sucesso dessa etapa determina a eficácia de todo o processo de KDD, avaliando e validando as informações geradas afim de identificar possíveis falhas nas fases anteriores \cite{cap02_ref12}. Avaliando a Figura~\ref{fig:kdd_process}, é possível observar que o fluxo do KDD é um processo recursivo, ou seja, caso a resposta de alguma etapa seja incoerente ou não satisfatória é possível reiniciar o mesmo, analisando todas as etapas em busca de melhorar e/ou refazer o que for necessário, até que o conhecimento resultante seja julgado como satisfatório.
 
 De forma semelhante, o processo de BI tem como finalidade coletar, organizar, compartilhar e analisar grandes volumes de dados empresariais projetando a realização de estratégias em gestão de negócios que visem a obtenção de vantagens competitivas \cite{cap02_ref16, cap02_ref15}. Tal procedimento, embora tenha uma metodologia própria, se assemelha bastante a técnica de KDD visto que ambos objetivam a extração de conhecimento válido acerca de conjuntos de dados \cite{cap02_ref17}. 
 
