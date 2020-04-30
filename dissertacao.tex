@@ -56,6 +56,7 @@
 \usepackage{multirow}                   % Para elaboração de tabelas
 \usepackage{longtable}
 \usepackage{tocloft}
+\usepackage{pdfpages}
 % ---------------------
 
 % ---------------------
@@ -111,7 +112,7 @@
 \imprimirfolhaderosto*
 
 % Imprimir Ficha Catalografica
-% \include{pretextual/catalografica}
+\includepdf[pages={1}]{pretextual/catalografica.pdf}
 
 % Inserir Folha de Aprovação
 \include{pretextual/assinaturas}
