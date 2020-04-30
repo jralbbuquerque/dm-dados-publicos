@@ -1,7 +1,7 @@
 # Introdução
 Esse repositório contêm a dissertação n. 16/2020, escrita em LaTeX, apresentada ao [Programa de Pós-Graduação em Engenharia 
 Elétrica](http://www.ppgee.ufpa.br/index.php/br/) da Universidade Federal do Pará (PPGEE-UFPA), na área de Computação Aplicada e 
-intitulada Ciência de Dados Aplicada em Dados Públicos: Estudos de Caso Acerda da Previdência Social Brasileira.
+intitulada Ciência de Dados Aplicada em Dados Públicos: Estudos de Caso Acerca da da Previdência Social Brasileira.
 
 # Softwares Usados
 - [MiKTeX](https://miktex.org/)
